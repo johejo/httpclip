@@ -40,7 +40,7 @@ func mainE() error {
 			}
 			log.Printf("copied %d bytes, content=%#v", len(s), s)
 		}(string(b))
-    w.WriteHeader(http.StatusAccepted)
+		w.WriteHeader(http.StatusAccepted)
 	})
 
 	log.Printf("listening on %s", addr)
